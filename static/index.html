@@ -4,6 +4,13 @@
     <title>Charts</title>
 </head>
 <body>
-    
+    <picture>
+        <!-- loop through the chart names -->
+        {% for chart in charts %}
+            <h3><p>{{ chart }}</p></h3>
+            <img src="{{ chart }}" />
+        {% endfor %}
+
+    </picture>
 </body>
 </html>
