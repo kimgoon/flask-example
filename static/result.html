@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Charts</title>
+</head>
+<body>
+
+        <h2>All Data: {{ datas }} </h2>
+
+        <p>
+        {% for d in datas %}
+
+            <h3><p>{{ d }}</p></h3>
+
+            <!--{{ datas[d] }}-->
+
+            {% for v in datas[d] %}
+            	<p>cpus:{{ v.cpus }}</p>
+                <p>memory:{{ v.memory }}</p>
+            {% endfor %}
+            
+        
+            
+        {% endfor %}
+	<form>
+		<input type="submit" name="submit" value="DoSomething" formmethod="post" formaction="/result">
+	</form>
+    
+        <!-- loop through the chart names -->
+
+
+
+
+
+</body>
+</html>
