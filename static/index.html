@@ -4,12 +4,18 @@
     <title>Charts</title>
 </head>
 <body>
+	<form>
+        <input type="input" name="value" />
+		<input type="submit" name="submit" value="ShowData" formmethod="post" formaction="/result">
+	</form>
     <picture>
         <!-- loop through the chart names -->
         {% for chart in charts %}
             <h3><p>{{ chart }}</p></h3>
             <img src="{{ chart }}" />
         {% endfor %}
+
+
 
     </picture>
 </body>
